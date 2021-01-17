@@ -9,35 +9,26 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/footer.css">
+
 </head>
-<body>
-<header class="header">
+<body class="site">
+<header class="site-header flex-between">
     <img tabindex= "0" class="header__img" src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610423257/icons/taco_a8uaee.svg" alt="Platzi Video">
     <div class="header__menu">
         <div class="header__menu--profile">
             <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610423655/icons/client_vpc0fq.svg" alt="User" width="40" height="40">
             <p> Perfil</p>
         </div>
-        <ul class="Menu">
-            <li class="Menu-item"><a href="/">Cuenta</a></li>
-            <li class="Menu-item"><a href="/">Cerrar Sesión</a></li>
+        <ul>
+            <li><a href="/">Cuenta</a></li>
+            <li><a href="/">Cerrar Sesión</a></li>
         </ul>
     </div>
 </header>
 
-<section class="container">
-    <section class="content">
-        <section class="main">
-            <h2 class="main__title">
-                Que quieres ver hoy?
-            </h2>
-            <input type="text" placeholder="Buscar..." class="main__input input" aria-label="Correo">
-        </section>
 
-        <h2 class="categories__title">
-            Mi lista
-        </h2>
+<main class="site-main">
+    <section class="main-content flex-center">
         <section class="carousel">
             <div class="carousel__container">
                 <div class="carousel-item">
@@ -68,25 +59,13 @@
             </div>
         </section>
     </section>
-    <aside class="aside">
-        <div class="card">
-            <div>
-                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610861205/banners/carlos-coronado-sSud-EZo23w-unsplash_sz5sei.jpg"
-                     alt=""
-                     width="50"
-                     height="50"
-
-                >
-            </div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium distinctio necessitatibus veritatis voluptate voluptatum? Animi, delectus distinctio earum expedita laborum modi, natus nihil, quae qui quia quisquam repellat reprehenderit vel.
-            </p>
-        </div>
+    <aside class="main-aside flex-center">
+        <div class="card"></div>
     </aside>
-</section>
+</main>
 
-<footer class="footer">
-    Footer
+<footer class="site-footer flex-center">
+    <h1 class="section-title">FOOTER</h1>
 </footer>
 </body>
 </html>

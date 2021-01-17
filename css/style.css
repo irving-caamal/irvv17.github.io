@@ -1,62 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
 body {
     margin: 0;
     font-family: "Muli", sans-serif;
-    background: #8f57fd;
 }
-
-.main {
+.site {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    height: 300px;
-    border-radius: 0px 0px 40px 40px;
+    min-height: 100vh;
 }
-.container {
-    outline: 1px solid lime;
-    height: inherit;
-    display: flex;
+.site-header {
+    height: 120px;
+    background: #3498db;
 }
-.content {
-    outline: 1px solid cyan;
+.site-footer {
+    height: 80px;
+    background: #34495e;
+}
+.site-main {
     flex: 1;
-}
-.aside {
-    outline 1px solid magenta;
-    /*   background: magenta; */
-    flex: 0 0 25%;
-}
-.main__title {
-    color: white;
-    font-size: 25px;
-}
-
-.categories__title {
-    color: white;
-    font-size: 16px;
-    /*position: absolute;
-    padding-left: 30px;
-    width: 100%;*/
     display: flex;
+}
+
+.main-content {
+    background: #fff;
+    flex-grow: 1;
+}
+.main-aside {
+    background: #ccc;
+    width: 150px;
+}
+
+@media screen and (max-width: 800px) {
+    .site-main {
+        flex-direction: column;
+    }
+
+    .main-aside {
+        width: initial;
+        height: 95px;
+    }
+}
+
+
+.flex-center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
-
-.input {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid white;
-    border-radius: 25px;
-    font-family: Roboto, "Comic Sans MS";
-    font-size: 16px;
-    height: 50px;
-    padding: 0px 20px;
-    width: 70%;
-    color: white;
-    outline: none;
+.section-title {
+    font-size: 2.5em;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0.25);
+    text-align: center;
 }
-
-::placeholder {
-    color: white;
+.section-subtitle {
+    &:extend(.section-title);
+    font-size: 1.5em;
 }
-
-/*# sourceMappingURL=styles.css.map */

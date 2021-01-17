@@ -1,0 +1,44 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-list-title {
+    margin-left: 20px;
+}
+.card {
+    margin: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+.card p {
+    display: flex;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    height: 200px;
+    object-fit: cover;
+}
+.card-detail {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.card-description {
+    text-align: left;
+}
+
+.card-url {
+    color: #056fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
