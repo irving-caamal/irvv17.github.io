@@ -3,11 +3,12 @@
     /*padding-left: 30px;*/
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .carousel__container {
-    white-space: nowrap;
+    display: flex;
+    max-width: 60vw;
     margin: 70px 0px;
     padding-bottom: 10px;
 }
@@ -17,7 +18,7 @@
     width: 200px;
     height: 250px;
     border-radius: 20px;
-    overflow: hidden;
+
     margin-right: 10px;
     display: inline-block;
     cursor: pointer;
@@ -44,6 +45,7 @@
 .carousel-item__img {
     width: 200px;
     height: 250px;
+    border-radius: 20px;
     object-fit: cover;
 }
 
