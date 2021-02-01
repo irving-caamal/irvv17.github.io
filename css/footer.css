@@ -1,0 +1,25 @@
+
+.footer__social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+}
+.footer__message{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 2vw;
+}
+.footer__social-img {
+    padding: 5px;
+}
+
+.site-footer {
+    display: flex;
+
+    justify-content: space-between;
+    background: whitesmoke;
+}
+
