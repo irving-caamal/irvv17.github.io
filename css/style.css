@@ -43,12 +43,12 @@ body {
     padding: 5vw;
 }
 .banner__img {
-    object-fit: fill;
+    object-fit: cover;
     width: 50vw;
     height: 50vh;
 }
 .bg-whitesmoke{
-    background-color: dodgerblue;
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
 }
 .site {
     display: flex;
@@ -59,31 +59,7 @@ body {
     height: 10vh;
     background: whitesmoke;
 }
-.site-footer {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: end;
-    justify-content: space-between;
-    background: whitesmoke;
-}
-.footer__social {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-    justify-content: space-around;
-}
-.footer__message{
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-    justify-content: space-around;
-}
-.footer__social-img {
-    padding: 5px;
-}
+
 .site-main {
     /*min-height: 80vh;*/
     display: flex;
@@ -95,11 +71,11 @@ body {
 .main-content {
     background: whitesmoke;
     flex-basis:70%;
-    height: 70vh;
+    /*height: 70vh;*/
 }
 .main-aside {
     background: whitesmoke;
-    height: 70vh;
+    height: 90vh;
     overflow: auto;
     flex-basis:30%;
 }
@@ -122,7 +98,7 @@ body {
     text-align: center;
 }
 .section-subtitle {
-    &:extend(.section-title);
+    /*&:extend(.section-title);*/
     font-size: 1.5em;
 }
 
@@ -144,4 +120,8 @@ body {
 }
 .py-5 {
     padding-right: 25px;
+}
+.img-white {
+    fill: white;
+    color: white;
 }
