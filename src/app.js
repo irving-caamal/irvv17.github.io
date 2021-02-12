@@ -10,15 +10,6 @@ console.log('click')
     toggleModal()
 }
 
-function render () {
-    const showMore = document.getElementById('show-more')
-
-    console.log(showMore)
-    showMore.addEventListener('click', () => {
-        console.log('click')
-    });
-
-    console.log('render')
-}
-
-render()
+const showMoreButton = document.querySelector('#show-more').addEventListener('click', function() {
+    console.log('click')
+});
