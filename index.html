@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 <body class="site">
 <main>
@@ -57,7 +58,7 @@
             <h1>Hola, Soy <b class="title"> Irving Caamal</b></h1>
             <p>Actualmente trabajo como <b class="tag">Full-Stack</b> developer,Mi Stack actual consta de <b>React.js</b> &oacute; <b>Vue.js</b> en el FrontEnd y <b>PHP</b> con Laravel en el Backend, Me dedico a la programacion desde hace 5 años y soy un apasionado de las nuevas tecnologias.
             </p>
-            <p>
+            <p class="hero__description">
                 Tengo conocimientos solidos de <b class="tag">DBA</b> en MySql y MSSQL, Actualmente estoy especializando mis habilidades como FrontEnd ya que es el campo que mas me ha gustado explorar. y donde me quiero especializar, soy Ingeniero en Sistemas Computacionales y me gusta todo lo relacionado a la tecnologia.
             </p>
         </div>
@@ -74,11 +75,11 @@
                          width="100%" height="80%"
                     />
                     <div class="card-detail">
-                        <h3 class="card-title"> Verificentro Mochcun</h3>
+                        <h3 class="card-title"> Verificentro Mochcun <small>(2018-Actualidad)</small></h3>
                         <p class="card-description">
                             Se desarrollo un <b class="tag">SMC</b> desde 0 para manejar y controlar cada una de las actividades realizadas en la logica de negocio.
                         </p>
-                        <button class="button gradient " >Ver M&aacute;s</button>
+                        <button class="button gradient show-more" id="show-more">Ver M&aacute;s</button>
                     </div>
                 </article>
                 <article class="card">
@@ -88,7 +89,7 @@
                          alt=""
                     />
                     <div class="card-detail">
-                        <h3 class="card-title"> Grupo Hummanitta</h3>
+                        <h3 class="card-title"> Grupo Hummanitta <small>(2017-2018)</small></h3>
                         <p class="card-description">
                             Me integro a un grupo de 5 desarrolladores para aportar la creacion de modulos de un sistema basado en contabilidad y control de procesos automatizados.
                         </p>
@@ -103,7 +104,7 @@
                     />
                     <div class="card-detail">
                         <h3 class="card-title">
-                            Coorporativo Turistico MASAN
+                            Coorporativo Turistico MASAN <small>(2015-2017)</small>
                         </h3>
                         <p class="card-description">
                             Mantenimiento y desarrollo de modulos de un <span class="tag">CRM</span>, añadiendo reportes de ventas mensuales asi como creacion de multiples proyectos webs.
@@ -124,42 +125,14 @@
                              width="200"
                              height="100"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678755/icons/boton-de-play_ji5ity.svg"
-                                     alt="Play"
-                                     class="carousel-item__img"
-                                     width="20px"
-                                     height="20px">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Titulo Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612113802/logos/css_opuxwj.svg"
-                             alt="" class="carousel-item__img"
+                             alt=""
+                             class="carousel-item__img"
                              width="200"
                              height="100"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="20px"
-                                     height="20px">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Titulo Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612117974/logos/239ec8a4-163e-4792-83b6-3f6d96911757_c1nsob.svg"
@@ -175,20 +148,6 @@
                              width="100"
                              height="100"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="20px"
-                                     height="20px">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Titulo Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612113895/logos/React_og8gbo.svg"
@@ -196,20 +155,6 @@
                              width="500px"
                              height="500px"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="20px"
-                                     height="20px">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Titulo Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -223,20 +168,6 @@
                              width="200"
                              height="100"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="20px"
-                                     height="20px">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Titulo Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612119509/logos/rest-api_l4ifce.svg"
@@ -245,20 +176,6 @@
                              width="200"
                              height="100"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="20px"
-                                     height="20px">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Titulo Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612114950/logos/laravel-ar21_q9caro.svg"
@@ -266,42 +183,13 @@
                              width="250"
                              height="100"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="20px"
-                                     height="20px">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Titulo Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
-
                     <div class="carousel-item">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612114580/logos/mysql-official_afgzc9.svg"
                              alt="" class="carousel-item__img"
                              width="200"
                              height="200"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="20px"
-                                     height="20px">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Título Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612111159/logos/microsoft-sql-server_rlbdys.svg"
@@ -310,20 +198,6 @@
                              width="200"
                              height="200"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="200"
-                                     height="200">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Titulo Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612137079/icons/firebase-1_xdnvy7.svg"
@@ -332,20 +206,6 @@
                              width="200"
                              height="200"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="200"
-                                     height="200">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Titulo Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -360,20 +220,6 @@
                              width="200"
                              height="100"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="20px"
-                                     height="20px">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Titulo Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612137079/icons/npmjs-ar21_qg8w7f.svg"
@@ -382,20 +228,6 @@
                              width="200"
                              height="100"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="20px"
-                                     height="20px">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Titulo Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612137079/icons/composer_f5r2ds.svg"
@@ -403,42 +235,13 @@
                              width="250"
                              height="100"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="20px"
-                                     height="20px">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Titulo Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
-
                     <div class="carousel-item">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612137079/icons/git-scm-ar21_fz2luz.svg"
                              alt="" class="carousel-item__img"
                              width="200"
                              height="200"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="20px"
-                                     height="20px">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Título Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612137079/icons/github-icon_atpiig.svg"
@@ -447,20 +250,6 @@
                              width="200"
                              height="200"
                         >
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610678822/icons/cross_j9h44v.svg"
-                                     alt="Plus"
-                                     width="200"
-                                     height="200">
-                            </div>
-                            <p class="carousel-item__details--title">
-                                Titulo Descriptivo
-                            </p>
-                            <p class="carousel-item__details--subtitle">
-                                2019 16+ 114 minutos
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -471,7 +260,8 @@
         <ul class="footer__social">
 
             <li>
-                <a href="https://www.linkedin.com/in/irving-caamal/">
+                <a href="https://www.linkedin.com/in/irving-caamal/"
+                target="_blank">
                     <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612133585/icons/linkedin_gsp0ep.svg"
                          alt=""
                          width=40"
@@ -482,26 +272,49 @@
 
             </li>
             <li>
-                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612133558/icons/github_vt01sj.svg"
-                     alt=""
-                     width="40"
-                     height="40"
-                     class="footer__social-img"
-                >
+                <a href="https://github.com/irvv17"
+                target="_blank">
+                    <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612133558/icons/github_vt01sj.svg"
+                         alt=""
+                         width="40"
+                         height="40"
+                         class="footer__social-img"
+                    >
+                </a>
             </li>
             <li>
-                <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610860460/icons/instagram_nymses.svg"
-                     alt=""
-                     width="40"
-                     height="40"
-                     class="footer__social-img"
+                <a href="https://platzi.com/p/Irvv17/"
+                target="_blank"
                 >
+                    <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612141615/logos/platzi_xidiva.svg"
+                         alt=""
+                         width="40"
+                         height="40"
+                         class="footer__social-img"
+                    >
+                </a>
+
             </li>
         </ul>
         <p class="footer__message">
-            Disenado y desarrollado por <a href="" class="">Irving Caamal</a>. ©2021, Derechos Reservados.
+            Disenado y desarrollado por &nbsp;<a href="https://github.com/irvv17" class="">Irving Caamal</a>. ©2021, Derechos Reservados.
         </p>
     </footer>
+
+
 </main>
+
+<div class="modal" id="modal">
+    <button class="close-button" id="close-button">X</button>
+    <div class="modal-guts">
+        <h1>Modal title</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi blanditiis ea eum facere harum impedit ipsum itaque maxime nobis omnis perferendis placeat, quidem quo, quod sed ullam. Obcaecati, provident!
+        </p>
+    </div>
+</div>
+
+<script src="src/app.js" type="module"></script>
 </body>
 </html>
