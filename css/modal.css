@@ -15,6 +15,7 @@
     padding: 20px;
     background: linear-gradient(25deg,#d64c7f,#ee4758 50%);;
     border-radius: 5px;
+
 }
 
 .modal-guts {
@@ -38,7 +39,7 @@
 
 }
 
-.modal .close-button {
+.modal .close-modal-button {
     position: absolute;
 
     /* don't need to go crazy with z-index here, just sits over .modal-guts */

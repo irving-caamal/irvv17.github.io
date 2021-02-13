@@ -19,11 +19,13 @@ body {
     border: 0;
     background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
 
+    outline: none;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1).5s;
 }
 .button.gradient:hover {
     cursor: pointer;
     border: 0;
-    background: white;
+    background: linear-gradient(25deg,#d64c7f,#ee4758 100%);
 
     transform: translateY(-3px);
     outline: none;
