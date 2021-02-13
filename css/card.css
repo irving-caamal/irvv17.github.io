@@ -18,7 +18,6 @@
     background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
 }
 .card:before{
-    content: '';
     border: 1px solid #d64c7f;
     position: absolute;
     top:-10px;

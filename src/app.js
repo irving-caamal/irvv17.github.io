@@ -1,4 +1,3 @@
-'use strict'
 
 function toggleModal() {
     const modal = document.getElementById("modal");

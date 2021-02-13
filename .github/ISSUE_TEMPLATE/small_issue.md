@@ -13,7 +13,7 @@ Task: Awesome Task Title
 
 This Task will...
 
-## Epic Parent
+## Feature Parent
 
 <!-- The link below should link to its Epic Parent. -->
 
