@@ -1,8 +1,8 @@
-#Hi, I'm Irving Caamal 
+# Hi, I'm Irving Caamal 
 
-This is my personal _portfolio_ or _website_, I'm trying to create different versions of it with different features or versions with different technologies.
+This is my personal _portfolio_ or _website_, I'm trying to create different versions of it with different features and differents technologies.
 
-> This **first** version is created with:
+> This **first** version is created only with:
 >
 >-HTML5
 >
