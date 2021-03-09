@@ -14,12 +14,19 @@
 }
 .footer__social-img {
     padding: 5px;
+    -webkit-filter: grayscale(100%);
+}
+.footer__social-img:hover {
+    padding: 5px;
+    -webkit-filter: grayscale(0%);
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
 }
 
 .site-footer {
     display: flex;
-
-    justify-content: space-between;
+    justify-content: space-around;
     background: whitesmoke;
 }
 
