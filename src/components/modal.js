@@ -1,6 +1,5 @@
 function toggleModal(title = '') {
     const modal = document.querySelector(".modal");
-    console.log(modal.style['display'])
     const modalTitle = document.querySelector(".modal-title")
     modalTitle.innerHTML = title;
     if (modal.style.display === 'block') {
