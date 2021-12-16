@@ -10,10 +10,8 @@ function arrayAsMap(newList, oldList = new Map()) {
 
 function actionsSkills() {
     const skills = document.querySelectorAll('.carousel-item')
-    console.log('skillet', skillSet)
     const backendSkillsAdMap = arrayAsMap(skillSet.backend)
     const frontendSkillsAdMap = arrayAsMap(skillSet.frontend)
-    console.log('SkillMap', backendSkillsAdMap, frontendSkillsAdMap)
     /**
      *
      */

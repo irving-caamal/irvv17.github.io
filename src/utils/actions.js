@@ -8,7 +8,6 @@ function buttonsActions() {
     buttons.forEach(button => {
         let title = button.dataset.id;
         return   button.addEventListener('click', function() {
-            console.log('skill', )
             toggleModal(title);
         });
     });
