@@ -54,7 +54,7 @@
     border-radius: 5px;
 }
 
-.header__menu:hover ul,ul:hover {
+.header__menu:hover  ul {
     display: block;
 }
 

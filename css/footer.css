@@ -5,6 +5,7 @@
     align-items: center;
     list-style: none;
     justify-content: space-around;
+    marigin-bottom: 90px;
 }
 .footer__message{
     display: flex;
@@ -13,7 +14,7 @@
     margin-right: 2vw;
 }
 .footer__social-img {
-    padding: 5px;
+    padding-right: 5px;
 }
 
 .site-footer {
