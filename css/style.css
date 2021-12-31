@@ -4,6 +4,9 @@ body {
     font-family: "Muli", sans-serif;
 
 }
+input, select, textarea{
+    color: #ff0000;
+}
 .button {
     color: whitesmoke;
     padding: 10px 20px;
@@ -22,19 +25,21 @@ input {
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    font-size: 1.5rem;
 }
+
 .button.gradient {
     color: whitesmoke;
     border: 0;
-    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    background: linear-gradient(25deg,#1C46B4,#284EDA 50%);
     outline: none;
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1).5s;
 }
 .button.gradient:hover {
     cursor: pointer;
-    color: whitesmoke;
+
     border: 0;
-    background: linear-gradient(25deg,#d64c7f,#ee4758 100%);
+    background: linear-gradient(25deg,#1C46B4,#284EDA 100%);
     transform: translateY(-3px);
     outline: none;
 }
@@ -57,7 +62,7 @@ input {
     height: 50vh;
 }
 .bg-whitesmoke{
-    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    background: linear-gradient(25deg,#1C46B4,#284EDA 50%);
 }
 .site {
     display: flex;
@@ -124,7 +129,7 @@ input {
 .title {
     color: white;
     padding: 0 4px;
-    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    background: linear-gradient(25deg,#1C46B4,#284EDA 50%);
     font-family: monospace;
     border-radius: 4px;
     -webkit-background-clip: text;
@@ -134,7 +139,7 @@ input {
 .tag {
     color: white;
     padding: 0 4px;
-    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    background: linear-gradient(25deg,#1C46B4,#284EDA 50%);
     font-family: monospace;
     border-radius: 4px;
 }
@@ -147,4 +152,25 @@ input {
 .img-white {
     fill: white;
     color: white;
+}
+/* always show scrollbars */
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-button {
+    display: block;
+    height: 0;
+}
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background-color: rgba(35, 125, 199, 0.5);
+    box-shadow: 0 0 1px rgba(40, 78, 209, 0.5);
 }

@@ -48,7 +48,7 @@
     </header>
 
     <div class="site-banner">
-        <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610213922/heros/connections-2099068_1280_tn7dvt.png"
+        <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1640043160/Irvv/illustrations/4799410_brgfu7.jpg"
              alt=""
              class="banner__img"
              width="400"
@@ -71,7 +71,7 @@
     <div class="site-main">
         <aside class="main-aside">
             <div>
-                <h1 class="flex-center ">Mis <span class="title">Proyectos</span></h1>
+                <h1 class="flex-center"><span class="title">Mis Proyectos</span></h1>
                 <article class="card">
                     <img class="card-image"
                          alt="projects"
@@ -178,7 +178,7 @@
                              class="carousel-item__img"
                              width="200"
                              height="100"
-                        >
+                        />
                     </div>
                     <div class="carousel-item" data-type="skill" data-id="rest">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612119509/logos/rest-api_l4ifce.svg"
@@ -265,20 +265,21 @@
             </div>
             <h1 class="flex-center title" id="contactame">Contactame</h1>
             <div class="flex flex-center title">
-                <form action="" class="flex flex-col px-2">
+                <form id="contact-form" class="flex flex-col px-2">
                     <div class="flex flex-col">
-                        <input type="text" class="" />
+                        <input type="text" name="name" class="" required="true"/>
                         <label for="">Name</label>
                     </div>
                     <div class="flex flex-col">
-                        <input type="text" class="flex-center"/>
+                        <input type="text" class="flex-center" name="email" required="true" />
                         <label for="">E-mail</label>
                     </div>
                     <div class="flex flex-col">
-                        <textarea name="" id="" cols="45" rows="10" class="flex-center"></textarea>
+                        <textarea name="observations" id="" cols="45" rows="10" class="flex-center"
+                                  required="true"/></textarea>
                         <label for="">Observations</label>
                     </div>
-                    <button type="button" class="button ">Enviar</button>
+                    <button type="submit" class=" ">Enviar</button>
                 </form>
             </div>
         </div>
