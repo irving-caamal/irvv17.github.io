@@ -3,7 +3,7 @@ import { actionsSkills } from "./actionsSkills.js";
 
 
 function buttonsActions() {
-    const buttons = document.querySelectorAll('.button');
+    const buttons = document.querySelectorAll('.button:not([type=submit])');
 
     buttons.forEach(button => {
         let title = button.dataset.id;
@@ -17,11 +17,8 @@ function buttonsActions() {
     form.addEventListener("submit", function(e) {
         e.preventDefault();
         const elements = this.elements
-        console.log({ elements })
-        console.log({ len: elements.length})
         for(let i=0; i< elements.length; i++) {
             if(['submit'].includes(elements[i].type)) {
-                alert('false')
                 return false;
             }
 

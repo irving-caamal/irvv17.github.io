@@ -5,7 +5,13 @@ body {
 
 }
 input, select, textarea{
-    color: #ff0000;
+    color: black;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
 }
 .button {
     color: whitesmoke;
@@ -18,20 +24,11 @@ input, select, textarea{
     text-transform: uppercase;
     cursor: pointer;
 }
-input {
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.5rem;
-}
 
 .button.gradient {
     color: whitesmoke;
     border: 0;
-    background: linear-gradient(25deg,#1C46B4,#284EDA 50%);
+    background: linear-gradient(25deg,#380036,#0cbaba 50%);
     outline: none;
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1).5s;
 }
@@ -39,7 +36,7 @@ input {
     cursor: pointer;
 
     border: 0;
-    background: linear-gradient(25deg,#1C46B4,#284EDA 100%);
+    background: linear-gradient(25deg,#380036,#0cbaba 100%);
     transform: translateY(-3px);
     outline: none;
 }
@@ -55,6 +52,8 @@ input {
 }
 .banner__menu {
     padding: 5vw;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .banner__img {
     object-fit: cover;
@@ -62,7 +61,7 @@ input {
     height: 50vh;
 }
 .bg-whitesmoke{
-    background: linear-gradient(25deg,#1C46B4,#284EDA 50%);
+    background: linear-gradient(25deg,#380036,#0cbaba 50%);
 }
 .site {
     display: flex;
@@ -70,6 +69,7 @@ input {
     min-height: 100vh;
 }
 .site-header {
+    position: sticky;
     height: 10vh;
     background: whitesmoke;
 }
@@ -129,7 +129,7 @@ input {
 .title {
     color: white;
     padding: 0 4px;
-    background: linear-gradient(25deg,#1C46B4,#284EDA 50%);
+    background: linear-gradient(25deg,#380036,#0cbaba 50%);
     font-family: monospace;
     border-radius: 4px;
     -webkit-background-clip: text;
@@ -139,7 +139,7 @@ input {
 .tag {
     color: white;
     padding: 0 4px;
-    background: linear-gradient(25deg,#1C46B4,#284EDA 50%);
+    background: linear-gradient(25deg,#380036,#0cbaba 50%);
     font-family: monospace;
     border-radius: 4px;
 }
