@@ -4,6 +4,15 @@ body {
     font-family: "Muli", sans-serif;
 
 }
+input, select, textarea{
+    color: black;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
 .button {
     color: whitesmoke;
     padding: 10px 20px;
@@ -15,18 +24,19 @@ body {
     text-transform: uppercase;
     cursor: pointer;
 }
+
 .button.gradient {
     color: whitesmoke;
     border: 0;
-    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    background: linear-gradient(25deg,#380036,#0cbaba 50%);
     outline: none;
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1).5s;
 }
 .button.gradient:hover {
     cursor: pointer;
-    color: whitesmoke;
+
     border: 0;
-    background: linear-gradient(25deg,#d64c7f,#ee4758 100%);
+    background: linear-gradient(25deg,#380036,#0cbaba 100%);
     transform: translateY(-3px);
     outline: none;
 }
@@ -42,6 +52,8 @@ body {
 }
 .banner__menu {
     padding: 5vw;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .banner__img {
     object-fit: cover;
@@ -49,7 +61,7 @@ body {
     height: 50vh;
 }
 .bg-whitesmoke{
-    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    background: linear-gradient(25deg,#380036,#0cbaba 50%);
 }
 .site {
     display: flex;
@@ -57,6 +69,7 @@ body {
     min-height: 100vh;
 }
 .site-header {
+    position: sticky;
     height: 10vh;
     background: whitesmoke;
 }
@@ -80,13 +93,23 @@ body {
     overflow: auto;
     flex-basis:30%;
 }
-
+.flex {
+    display: flex;
+}
 .flex-center {
-     display: flex;
      justify-content: center;
      align-items: center;
 }
-
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5vw;
+}
+.flex-col {
+    flex-direction: column;
+}
 .flex-between {
     display: flex;
     justify-content: space-between;
@@ -104,8 +127,9 @@ body {
 }
 
 .title {
+    color: white;
     padding: 0 4px;
-    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    background: linear-gradient(25deg,#380036,#0cbaba 50%);
     font-family: monospace;
     border-radius: 4px;
     -webkit-background-clip: text;
@@ -115,9 +139,12 @@ body {
 .tag {
     color: white;
     padding: 0 4px;
-    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    background: linear-gradient(25deg,#380036,#0cbaba 50%);
     font-family: monospace;
     border-radius: 4px;
+}
+.px-2 {
+    padding: 0 2px;
 }
 .py-5 {
     padding-right: 25px;
@@ -125,4 +152,25 @@ body {
 .img-white {
     fill: white;
     color: white;
+}
+/* always show scrollbars */
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-button {
+    display: block;
+    height: 0;
+}
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background-color: rgba(35, 125, 199, 0.5);
+    box-shadow: 0 0 1px rgba(40, 78, 209, 0.5);
 }

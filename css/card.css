@@ -15,7 +15,7 @@
     position: relative;
 }
 .card-active {
-    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    background: linear-gradient(25deg,#380036,#0cbaba 50%);
 }
 .card:before{
     border: 1px solid #d64c7f;
@@ -58,7 +58,7 @@
 }
 .card-title {
     padding: 0 4px;
-    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    background: linear-gradient(25deg,#380036,#0cbaba 50%);
     display: inline-block;
     font-family: monospace;
     border-radius: 4px;

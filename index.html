@@ -26,7 +26,7 @@
                     <rect y="60" width="100" height="20"></rect>
                 </svg>
             </div>
-            <ul class="bg-whitesmoke">
+            <ul class="bg-whitesmoke flex flex-center">
                 <li>
                     <a href="#skills">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612135360/icons/brain_u4lhfi.svg"
@@ -48,7 +48,7 @@
     </header>
 
     <div class="site-banner">
-        <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1610213922/heros/connections-2099068_1280_tn7dvt.png"
+        <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1640043160/Irvv/illustrations/4799410_brgfu7.jpg"
              alt=""
              class="banner__img"
              width="400"
@@ -71,7 +71,7 @@
     <div class="site-main">
         <aside class="main-aside">
             <div>
-                <h1 class="flex-center ">Mis <span class="title">Proyectos</span></h1>
+                <h1 class="flex-center"><span class="title">Mis Proyectos</span></h1>
                 <article class="card">
                     <img class="card-image"
                          alt="projects"
@@ -178,7 +178,7 @@
                              class="carousel-item__img"
                              width="200"
                              height="100"
-                        >
+                        />
                     </div>
                     <div class="carousel-item" data-type="skill" data-id="rest">
                         <img src="https://res.cloudinary.com/dogfasxu0/image/upload/v1612119509/logos/rest-api_l4ifce.svg"
@@ -263,13 +263,23 @@
                     </div>
                 </div>
             </div>
-            <h1 class="flex-center title">Contactame</h1>
-            <div class="flex-center title" id="contactame">
-                <form action="">
-                    <input type="text" class="">
-                    <input type="text" class="">
-                    <textarea name="" id="" cols="30" rows="10" class=""></textarea>
-                    <button type="Submit" class="button gradient">Enviar</button>
+            <h1 class="flex-center title" id="contactame">Contactame</h1>
+            <div class="flex-center ">
+                <form id="contact-form" class="flex flex-col px-2">
+                    <div class="flex flex-col">
+                        <input type="text" name="name" class="" required="true"/>
+                        <label for="" class="title">Name</label>
+                    </div>
+                    <div class="flex flex-col">
+                        <input type="text" class="flex-center" name="email" required="true" />
+                        <label for="" class="title">E-mail</label>
+                    </div>
+                    <div class="flex flex-col">
+                        <textarea name="observations" id="" cols="45" rows="10" class="flex-center"
+                                  required="true"/></textarea>
+                        <label for="" class="title">Observations</label>
+                    </div>
+                    <button type="submit" class="button gradient">Enviar</button>
                 </form>
             </div>
         </div>
@@ -307,8 +317,7 @@
             </a>
         </ul>
         <p class="footer__message">
-            Disenado y desarrollado por &nbsp;<a href="https://github.com/irvv17" class="">Irving Caamal</a>. ©2021,
-            Derechos Reservados.
+            Disenado y desarrollado por &nbsp;<a href="https://github.com/irvv17" class="">Irving Caamal</a> ©2022, Derechos Reservados.
         </p>
     </footer>
 

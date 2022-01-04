@@ -19,12 +19,12 @@
     bottom:  -2px;
     left: 0;
     right: 0;
-    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    background: linear-gradient(25deg,#380036,#0cbaba 50%);
 
 }
 
 .header__link:hover {
-    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    background: linear-gradient(25deg,#380036,#0cbaba 50%);
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -49,9 +49,17 @@
     padding: 5px;
     position: absolute;
     text-align: right;
-    width: 10vw;
+
     margin: 0px 20px 0px -5vw;
     border-radius: 5px;
+    width: 50vw;
+    height: 50vh;
+
+    overflow: hidden;
+    z-index: 1;
+    transform: translateX(-60%);
+    transition: transform 0.5s ease;
+
 }
 
 .header__menu:hover  ul {
